@@ -114,6 +114,7 @@ PROGRAMAS_FLATPAK_PARA_INSTALAR=(
   com.discordapp.Discord
   com.jetbrains.WebStorm
   com.jetbrains.Rider
+  org.openrgb.OpenRGB
 )
 
 PROGRAMAS_WEBAPP_PARA_INSTALAR=(
