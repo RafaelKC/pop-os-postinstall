@@ -52,6 +52,12 @@ fi
 
 # ------------------------------------------------------------------------------ #
 
+config_git(){
+  git config --global user.name "RafaelKC"
+  git config --global user.email rafaelkaua97@gmail.com
+}
+
+
 ## Removendo travas eventuais do apt ##
 travas_apt(){
   sudo rm /var/lib/dpkg/lock-frontend
@@ -241,6 +247,7 @@ install_ngrok
 install_toolbox
 install_node
 install_nvm
+config_git
 extra_config
 apt_update
 system_clean
