@@ -42,9 +42,10 @@ autoinstall:
     - git
     - curl
   late-commands: 
-    - curtin in-target -- flatpak install flathub com.obsproject.Studio
-    - curtin in-target -- flatpak install flathub io.github.zen_browser.zen
-    - curtin in-target -- flatpak install flathub it.mijorus.gearlever
+    - curtin in-target -- flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo -y
+    - curtin in-target -- flatpak install flathub com.obsproject.Studio -y
+    - curtin in-target -- flatpak install flathub io.github.zen_browser.zen -y
+    - curtin in-target -- flatpak install flathub it.mijorus.gearlever -y
     # Install folder color
     - curtin in-target -- add-apt-repository ppa:costales/folder-color -y
     - curtin in-target -- apt-get update
