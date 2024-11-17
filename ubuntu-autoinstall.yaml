@@ -2,7 +2,6 @@ autoinstall:
   version: 1
   interactive-sections:
     - storage
-    - network
   keyboard:
     layout: us
     variant: intl
@@ -43,9 +42,9 @@ autoinstall:
     - curl
     - ngrok
   late-commands: 
-    - curtin in-target -- flatpak install flathub com.obsproject.Studio
-    - curtin in-target -- flatpak install flathub io.github.zen_browser.zen
-    - curtin in-target -- flatpak install flathub it.mijorus.gearlever
+    # - curtin in-target -- flatpak install flathub com.obsproject.Studio
+    # - curtin in-target -- flatpak install flathub io.github.zen_browser.zen
+    # - curtin in-target -- flatpak install flathub it.mijorus.gearlever
     # Install folder color
     - curtin in-target -- add-apt-repository ppa:costales/folder-color -y
     - curtin in-target -- apt-get update
