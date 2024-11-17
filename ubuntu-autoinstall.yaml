@@ -1,0 +1,60 @@
+# late-commands
+
+
+autoinstall:
+  version: 1
+  interactive-sections:
+    - storage
+    - network
+  keyboard:
+    layout: us
+    variant: intl
+  refresh-installer:
+    update: true
+  source:
+    id: ubuntu-desktop
+  ssh:
+    install-server: true
+  codecs:
+    install: true
+  drivers:
+    install: true
+  shutdown: reboot
+  updates: all
+  timezone: "America/Sao_Paulo"
+  identity:
+    realname: 'Rafael Chicovis'
+    username: rafael
+    password: $6$DrZxWgVjz7IjwjEj$UaUg9GJLTjSxcrR6QaAgUDtZE8QeP6tZBb7BT13ekkqTmX22m6AkatfXwzPfXWaa688ENnHgLFtw7w/8SkAHz/
+    hostname: ubuntu-desktop
+  snaps: 
+    - name: vlc
+    - name: thunderbird
+    - name: teams-for-linux
+    - name: discord
+    - name: sublime-text
+      classic: true
+    - name: obsidian
+      classic: true
+  packages:
+    - flameshot
+    - ubuntu-restricted-extras
+    - v4l2loopback-dkms
+    - gnome-sushi
+    - flatpak
+    - git
+    - curl
+    - ngrok
+  late-commands: 
+    - curtin in-target -- flatpak install flathub com.obsproject.Studio
+    - curtin in-target -- flatpak install flathub io.github.zen_browser.zen
+    - curtin in-target -- flatpak install flathub it.mijorus.gearlever
+    # Install folder color
+    - curtin in-target -- add-apt-repository ppa:costales/folder-color -y
+    - curtin in-target -- apt-get update
+    - curtin in-target -- install folder-color -y
+    # NVM
+    - curtin in-target -- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+    
+
+
