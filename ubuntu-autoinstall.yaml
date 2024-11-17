@@ -1,6 +1,3 @@
-# late-commands
-
-
 autoinstall:
   version: 1
   interactive-sections:
