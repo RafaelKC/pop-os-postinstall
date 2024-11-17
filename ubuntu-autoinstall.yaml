@@ -44,8 +44,8 @@ autoinstall:
   late-commands:
     # Install folder color
     - curtin in-target -- add-apt-repository ppa:costales/folder-color -y
-    - curtin in-target -- apt-get update
-    - curtin in-target -- install folder-color -y
+    - curtin in-target -- apt update
+    - curtin in-target -- apt install folder-color -y
     # NVM
     - curtin in-target -- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
     
