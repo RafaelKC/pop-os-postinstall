@@ -28,6 +28,7 @@ autoinstall:
     - name: thunderbird
     - name: teams-for-linux
     - name: discord
+    - name: ngrok
     - name: sublime-text
       classic: true
     - name: obsidian
@@ -40,11 +41,10 @@ autoinstall:
     - flatpak
     - git
     - curl
-    - ngrok
   late-commands: 
-    # - curtin in-target -- flatpak install flathub com.obsproject.Studio
-    # - curtin in-target -- flatpak install flathub io.github.zen_browser.zen
-    # - curtin in-target -- flatpak install flathub it.mijorus.gearlever
+    - curtin in-target -- flatpak install flathub com.obsproject.Studio
+    - curtin in-target -- flatpak install flathub io.github.zen_browser.zen
+    - curtin in-target -- flatpak install flathub it.mijorus.gearlever
     # Install folder color
     - curtin in-target -- add-apt-repository ppa:costales/folder-color -y
     - curtin in-target -- apt-get update
