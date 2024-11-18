@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&Locale=en-US&Keyboard=00020409&GeoLocation=32&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&BypassNetworkCheck=true&ComputerNameMode=Custom&ComputerName=Windows11&CompactOsMode=Default&TimeZoneMode=Implicit&PartitionMode=Interactive&WindowsEditionMode=Unattended&WindowsEdition=home&UserAccountMode=Unattended&AccountName0=Admin&AccountPassword0=%23w3%25%2313&AccountGroup0=Administrators&AccountName1=Rafael+Chicovis&AccountPassword1=%23w3%25%2313&AccountGroup1=Users&AccountName2=&AccountName3=&AccountName4=&AutoLogonMode=Own&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=Hidden&TaskbarSearch=Box&ShowFileExtensions=true&DisableWidgets=true&DeleteTaskbarIcons=true&EnableLongPaths=true&EnableRemoteDesktop=true&AllowPowerShellScripts=true&PreventAutomaticReboot=true&DisableAppSuggestions=true&VBoxGuestAdditions=true&WifiMode=Skip&ExpressSettings=DisableAll&KeysMode=Skip&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%23cc8e9a&AccentColorOnStart=true&AccentColorOnBorders=true&WallpaperMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveNotepadClassic=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemovePaint=true&RemovePaint3D=true&RemovePeople=true&RemovePhotos=true&RemovePowerAutomate=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveSkype=true&RemoveSnippingTool=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveFaxAndScan=true&RemoveWindowsHello=true&RemoveWindowsMediaPlayer=true&RemoveWordPad=true&RemoveXboxApps=true&StartTilesMode=Default&StartPinsMode=Empty&WdacMode=Skip-->
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=en-US&Locale=en-US&Keyboard=00020409&GeoLocation=32&ProcessorArchitecture=amd64&ComputerNameMode=Custom&ComputerName=Windows11&CompactOsMode=Default&TimeZoneMode=Explicit&TimeZone=E.+South+America+Standard+Time&PartitionMode=Interactive&WindowsEditionMode=Unattended&WindowsEdition=home&UserAccountMode=Unattended&AccountName0=Admin&AccountPassword0=%23w3%25%2313&AccountGroup0=Administrators&AccountName1=Rafael+Chicovis&AccountPassword1=%23w3%25%2313&AccountGroup1=Users&AccountName2=&AccountName3=&AccountName4=&AutoLogonMode=Own&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Default&HideFiles=Hidden&TaskbarSearch=Box&ShowFileExtensions=true&DisableWidgets=true&DeleteTaskbarIcons=true&EnableLongPaths=true&EnableRemoteDesktop=true&AllowPowerShellScripts=true&PreventAutomaticReboot=true&DisableAppSuggestions=true&WifiMode=Skip&ExpressSettings=DisableAll&KeysMode=Skip&ColorMode=Default&WallpaperMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveNotepadClassic=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemovePaint=true&RemovePaint3D=true&RemovePeople=true&RemovePhotos=true&RemovePowerAutomate=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveSkype=true&RemoveSnippingTool=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveFaxAndScan=true&RemoveWindowsHello=true&RemoveWindowsMediaPlayer=true&RemoveWordPad=true&RemoveXboxApps=true&StartTilesMode=Default&StartPinsMode=Empty&WdacMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -14,31 +14,33 @@
 		</component>
 		<component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<UserData>
+				<ImageInstall>
+					<OSImage>
+						<WillShowUI>OnError</WillShowUI>
+						<InstallTo>
+							<DiskID>0</DiskID>
+							<PartitionID>4</PartitionID>
+						</InstallTo>
+						<InstallFrom>
+							<MetaData wcm:action="add">
+								<Key>/Image/Index</Key>
+								<Value>6</Value>
+							</MetaData>
+						</InstallFrom>
+					</OSImage>
+				</ImageInstall>
 				<ProductKey>
-					<Key>YTMG3-N6DKC-DKB77-7M9GH-8HVX7</Key>
+					<Key></Key>
 				</ProductKey>
 				<AcceptEula>true</AcceptEula>
 			</UserData>
-			<RunSynchronous>
-				<RunSynchronousCommand wcm:action="add">
-					<Order>1</Order>
-					<Path>reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassTPMCheck /t REG_DWORD /d 1 /f</Path>
-				</RunSynchronousCommand>
-				<RunSynchronousCommand wcm:action="add">
-					<Order>2</Order>
-					<Path>reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassSecureBootCheck /t REG_DWORD /d 1 /f</Path>
-				</RunSynchronousCommand>
-				<RunSynchronousCommand wcm:action="add">
-					<Order>3</Order>
-					<Path>reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassRAMCheck /t REG_DWORD /d 1 /f</Path>
-				</RunSynchronousCommand>
-			</RunSynchronous>
 		</component>
 	</settings>
 	<settings pass="generalize"></settings>
 	<settings pass="specialize">
 		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<ComputerName>Windows11</ComputerName>
+			<TimeZone>E. South America Standard Time</TimeZone>
 		</component>
 		<component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<RunSynchronous>
@@ -398,20 +400,6 @@ reg.SetDWORDValue HKLM, key, "SmartActiveHoursState", 2
 	&lt;/Actions&gt;
 &lt;/Task&gt;
 		</File>
-		<File path="C:\Windows\Setup\Scripts\VBoxGuestAdditions.ps1">
-&amp; {
-	foreach( $letter in 'DEFGHIJKLMNOPQRSTUVWXYZ'.ToCharArray() ) {
-		$exe = "${letter}:\VBoxWindowsAdditions.exe";
-		if( Test-Path -LiteralPath $exe ) {
-			$certs = "${letter}:\cert";
-			Start-Process -FilePath "${certs}\VBoxCertUtil.exe" -ArgumentList "add-trusted-publisher ${certs}\vbox*.cer", "--root ${certs}\vbox*.cer"  -Wait;
-			Start-Process -FilePath $exe -ArgumentList '/with_wddm', '/S' -Wait;
-			return;
-		}
-	}
-	'VBoxGuestAdditions.iso is not attached to this VM.';
-} *&gt;&amp;1 &gt;&gt; "$env:TEMP\VBoxGuestAdditions.log";
-		</File>
 		<File path="C:\Windows\Setup\Scripts\SetStartPins.ps1">
 $json = '{"pinnedList":[]}';
 if( [System.Environment]::OSVersion.Version.Build -lt 20000 ) {
@@ -421,64 +409,8 @@ $key = 'Registry::HKLM\SOFTWARE\Microsoft\PolicyManager\current\device\Start';
 New-Item -Path $key -ItemType 'Directory' -ErrorAction 'SilentlyContinue';
 Set-ItemProperty -LiteralPath $key -Name 'ConfigureStartPins' -Value $json -Type 'String';
 		</File>
-		<File path="C:\Windows\Setup\Scripts\SetColorTheme.ps1">
-$lightThemeSystem = 0;
-$lightThemeApps = 0;
-$accentColorOnStart = 1;
-$enableTransparency = 0;
-$htmlAccentColor = '#CC8E9A';
-&amp; {
-	$params = @{
-		LiteralPath = 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize';
-		Force = $true;
-		Type = 'DWord';
-	};
-	Set-ItemProperty @params -Name 'SystemUsesLightTheme' -Value $lightThemeSystem;
-	Set-ItemProperty @params -Name 'AppsUseLightTheme' -Value $lightThemeApps;
-	Set-ItemProperty @params -Name 'ColorPrevalence' -Value $accentColorOnStart;
-	Set-ItemProperty @params -Name 'EnableTransparency' -Value $enableTransparency;
-};
-&amp; {
-	Add-Type -AssemblyName 'System.Drawing';
-	$accentColor = [System.Drawing.ColorTranslator]::FromHtml( $htmlAccentColor );
-
-	function ConvertTo-DWord {
-		param(
-			[System.Drawing.Color]
-			$Color
-		);
-						
-		[byte[]] $bytes = @(
-			$Color.R;
-			$Color.G;
-			$Color.B;
-			$Color.A;
-		);
-		return [System.BitConverter]::ToUInt32( $bytes, 0); 
-	}
-
-	$startColor = [System.Drawing.Color]::FromArgb( 0xD2, $accentColor );
-	Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent' -Name 'StartColorMenu' -Value( ConvertTo-DWord -Color $accentColor ) -Type 'DWord' -Force;
-	Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent' -Name 'AccentColorMenu' -Value( ConvertTo-DWord -Color $accentColor ) -Type 'DWord' -Force;
-	Set-ItemProperty -LiteralPath 'Registry::HKCU\Software\Microsoft\Windows\DWM' -Name 'AccentColor' -Value( ConvertTo-DWord -Color $accentColor ) -Type 'DWord' -Force;
-	$params = @{
-		LiteralPath = 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent';
-		Name = 'AccentPalette';
-	};
-	$palette = Get-ItemPropertyValue @params;
-	$index = 20;
-	$palette[ $index++ ] = $accentColor.R;
-	$palette[ $index++ ] = $accentColor.G;
-	$palette[ $index++ ] = $accentColor.B;
-	$palette[ $index++ ] = $accentColor.A;
-	Set-ItemProperty @params -Value $palette -Type 'Binary' -Force;
-};
-		</File>
 		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
 $scripts = @(
-	{
-		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v BypassNRO /t REG_DWORD /d 1 /f;
-	};
 	{
 		Remove-Item -LiteralPath 'Registry::HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\DevHomeUpdate' -Force -ErrorAction 'SilentlyContinue';
 	};
@@ -524,9 +456,6 @@ $scripts = @(
 		reg.exe add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 0 /f;
 	};
 	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\VBoxGuestAdditions.ps1' -Raw | Invoke-Expression;
-	};
-	{
 		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetStartPins.ps1' -Raw | Invoke-Expression;
 	};
 );
@@ -551,9 +480,6 @@ $scripts = @(
 	};
 	{
 		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\TaskbarIcons.ps1' -Raw | Invoke-Expression;
-	};
-	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetColorTheme.ps1' -Raw | Invoke-Expression;
 	};
 	{
 		Get-Process -Name 'explorer' -ErrorAction 'SilentlyContinue' | Where-Object -FilterScript {
@@ -605,9 +531,6 @@ $scripts = @(
 		foreach( $name in $names ) {
 		  reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v $name /t REG_DWORD /d 0 /f;
 		}
-	};
-	{
-		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\DWM" /v ColorPrevalence /t REG_DWORD /d 1 /f;
 	};
 	{
 		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\RunOnce" /v "UnattendedSetup" /t REG_SZ /d "powershell.exe -NoProfile -Command \""Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\UserOnce.ps1' -Raw | Invoke-Expression;\""" /f;

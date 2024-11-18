@@ -2,7 +2,7 @@
 
 | **App**                         | **Linux**                                                                         | **Win**                                                                                |
 | ------------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| QuickShare                      | -                                                                                 | [MS Store](https://apps.microsoft.com/detail/9pctgdfxvzlj?hl=pt-BR&gl=BR)              |
+| YoutPhone                       | -                                                                                 | MS Store                                                                               |
 | Docker                          | [APT - Docker.com](https://docs.docker.com/engine/install/ubuntu/)                | -                                                                                      |
 | Docket Desktop                  | [APT - Docker.com](https://docs.docker.com/desktop/setup/install/linux/ubuntu/)   | -                                                                                      |
 | Insominia                       | APT - Insominia.rest                                                              | -                                                                                      |
@@ -21,7 +21,7 @@
 | Flameshot                       | `apt install flameshot`                                                           | Flameshot.org                                                                          |
 | VLC                             | [Snap](https://snapcraft.io/vlc)                                                  | -                                                                                      |
 | Flatpak                         | [Flathub](https://flathub.org/setup/Ubuntu)                                       | -                                                                                      |
-| Git                             | -                                                                                 | [APT - git.scm.com](https://git-scm.com/downloads/win)                                 |
+| Git                             | Snap                                                                              | [APT - git.scm.com](https://git-scm.com/downloads/win)                                 |
 | Folder color                    | [APT - Github](https://github.com/costales/folder-color)                          | -                                                                                      |
 | ubuntu-restricted-extras        | `sudo apt install ubuntu-restricted-extras`                                       | -                                                                                      |
 | v4l2loopback-utils              | `sudo apt install v4l2loopback-dkms`<br>                                          | -                                                                                      |
@@ -71,3 +71,5 @@ Cor: CC8E9A
 - https://www.youtube.com/watch?v=dipTKWR2A6E -> Pasta colorida (PowerToys)
 - https://www.youtube.com/watch?v=k8xrim3A8yk -> Wokrspace (PowerToys)
 - https://www.youtube.com/watch?v=wxY2roIWvAs -> Postinstal windows 
+
+
